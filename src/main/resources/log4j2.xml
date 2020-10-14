@@ -14,7 +14,7 @@
              <PatternLayout pattern="${LOG_PATTERN}"/>
          </File>-->
 
-        <RollingFile name="RollingFileAppender" filePattern="/data/log/application/app_%d{dd}_%d{HH}.log">
+        <RollingFile name="RollingFileAppender" filePattern="/tmp/log/application/app_%d{dd}_%d{HH}.log">
             <PatternLayout pattern="${LOG_PATTERN}"/>
             <Policies>
                 <TimeBasedTriggeringPolicy/>
